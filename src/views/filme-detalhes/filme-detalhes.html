@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filme - APMDb</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon" />
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar-brand text-light fs-4 fw-bold" href="index.html"> 
+          <img src=".//src/assets/logo2.png" alt>
+        </a>
+
+        <a class="btn btn-outline-light" href="index.html">Página Inicial</a>
+      </div>
+    </nav>
+    <div class="container d-grid gap-3 my-4">
+      
+      <!-- Cabecalho -->
+      <div class="row">
+        <div class="d-flex align-items-center">
+          <h1 id="titulo" class="text-light"></h1>
+
+          <div class="ms-auto text-end">
+            <p id="votos" class="text-light"></p>
+            <i class="bi bi-heart fs-2 text-warning"></i>
+          </div>
+        </div>
+        <small class="text-light" id="dataLancamento"></small>
+      </div>
+
+      <!-- Seção do Poster e Trailer -->
+      <div class="row gap-3">
+        <div class="col-lg-3">
+          <img
+            class="img-fluid rounded-3" id="img"
+            alt=""
+          />
+        </div>
+        <div class="col-lg">
+          <div class="ratio ratio-21x9 h-100">
+            <iframe
+              class="rounded-3"
+              id="iframeTrailer"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div id="generos" class="d-flex gap-3">
+      
+      </div>
+
+      <div class="row">
+        <p id="texto" class="fs-5 text-light"></p>
+      </div>
+
+      <button id="favorito" class="btn btn-primary">Adicionar aos Favoritos</button>
+
+    </div>
+  </body>
+</html>
